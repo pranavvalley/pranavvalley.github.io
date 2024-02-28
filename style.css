@@ -44,16 +44,20 @@ button
     min-height: 6vh;
     margin: 0px 5px;
     font-size: medium;
+    padding: 0px 1vw;
 }
 
 .primary
 {
-    background-color: white;
-    color: black;
+    background: linear-gradient(90deg, rgba(43,148,200,1) 0%, rgba(47,65,232,1) 100%);
+    color: rgb(255, 255, 255);
 }
 
 .secondary
 {
-    background-color: rgba(0, 0, 0, 0);
-    border: white 2px solid;
+    background: linear-gradient(black,black) padding-box,linear-gradient(90deg, rgba(43,148,200,1) 0%, rgba(47,65,232,1) 100%) border-box;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50px;
+    border-color: transparent;
 }
