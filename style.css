@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     color:white;
+    font-family: "Montserrat",sans-serif;
+    transition: 500ms;
+}
+
+
+
+#myname
+{
+    background: linear-gradient(90deg, rgba(43,148,200,1) 0%, rgba(47,65,232,1) 100%) text;
+    color: transparent;
+}
+
+h1{
+    font-size: xxx-large;
+}
+
+h4{
+    font-size: medium;
 }
 
 body
@@ -22,6 +42,7 @@ body
     flex-direction: column;
     height: 80vh;
     width: 90vw;
+    justify-content: center;
 }
 .supli
 {
@@ -29,7 +50,7 @@ body
     flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 10vh;
     width: 90vw;
 }
@@ -57,7 +78,60 @@ button
 {
     background: linear-gradient(black,black) padding-box,linear-gradient(90deg, rgba(43,148,200,1) 0%, rgba(47,65,232,1) 100%) border-box;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 50px;
     border-color: transparent;
+}
+
+#neonmist
+{
+    position: absolute;
+    z-index: -100;
+    height: 0px;
+    width: 0px;
+    box-shadow: 0px 0px 100px 100px #0243996e;
+    transition: 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (orientation: portrait){
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 90vw;
+    justify-content: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+.supli
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+    height: 20vh;
+    width: 90vw;
+
+}
+
+.supli button
+{
+    margin: 2px;
+    width: 100%;
+}
+
+
 }
