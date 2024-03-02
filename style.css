@@ -66,6 +66,7 @@ button
     margin: 0px 5px;
     font-size: medium;
     padding: 0px 1vw;
+    transition: 100ms;
 }
 
 .primary
@@ -92,6 +93,17 @@ button
     box-shadow: 0px 0px 100px 100px #0243996e;
     transition: 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+button:hover
+{
+    scale: 1.03;
+}
+
+button:active
+{
+    scale: 0.97;
+}
+
 
 @media only screen and (orientation: portrait){
 .hero
