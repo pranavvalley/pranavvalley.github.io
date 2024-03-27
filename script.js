@@ -8,7 +8,15 @@ document.addEventListener('mousemove', function(e) {
 
 
 function contactbutton() {
+  open(("mailto:lostttgamer@gmail.com"))
+}
 
-  open(("mailto:'lostttgamer@gmail.com'"))
-  
+
+function projectsbutton() {
+
+}
+
+
+function showandhidprojects() {
+  let box = document.getElementById('neonmist');
 }
