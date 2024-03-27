@@ -5,3 +5,10 @@ document.addEventListener('mousemove', function(e) {
     circle.style.left = left
     circle.style.top = top 
   });
+
+
+function contactbutton() {
+
+  open(("mailto:'lostttgamer@gmail.com'"))
+  
+}

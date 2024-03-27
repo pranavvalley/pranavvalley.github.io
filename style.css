@@ -9,7 +9,6 @@
 }
 
 
-
 #myname
 {
     background: linear-gradient(90deg, rgba(43,148,200,1) 0%, rgba(47,65,232,1) 100%) text;
@@ -93,6 +92,8 @@ button
     box-shadow: 0px 0px 100px 100px #0243996e;
     transition: 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+
 
 button:hover
 {
