@@ -1,20 +1,30 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranav's Projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="neonmist"></div>
-    <div class="hero">
-        <h1>Hi<br>I'm <span id="myname">Pranav</span></h1>
-        <p>I love to craft Apps,Websites and Games<br>Linux user since 2019</p>
-    </div>
-    <div class="supli">
-        <button class="secondary">Projects</button>
-        <button class="primary" onclick="projectsbutton()">Contact</button>
-    </div>
-</body>
-<script src="script.js"></script>
+<!doctype html>
+<html lang="en" style="background-color: #000000;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PranavValley</title>
+  </head>
+  <body>
+    <style>
+      @keyframes showup {
+        from{opacity: 0;scale: 5;}
+        to  {opacity: 1;scale: 1;}
+      }
+      #app{
+        animation: showup 900ms ease-out;
+      }
+    </style>
+    <div hidden id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      function loadpage(){
+        document.getElementById("app").removeAttribute("hidden")
+      }
+      setTimeout(() => {
+        console.log("done")
+        loadpage()
+      }, 200);
+    </script>
+  </body>
 </html>
